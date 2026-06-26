@@ -143,15 +143,7 @@ https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/c
 
 ## 👩‍💻 Author
 **Pitti Anusha**
-Associate Instrumentation Engineer | Intern @ Think Champ Pvt Ltd
 
----
 
-## ⚠️ Disclaimer
-This application is intended for **educational purposes only**.
-Always consult a qualified medical professional for health advice.
 
----
 
-## 📄 License
-MIT License © 2026 Pitti Anusha
