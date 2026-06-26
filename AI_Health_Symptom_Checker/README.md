@@ -111,8 +111,34 @@ AI_Health_Symptom_Checker/
 ---
 
 ## 📸 Screenshots
-Screenshots will be placed inside the `/screenshots` folder.
 
+### 🏠 Home Page (Light Mode)
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/welcome%20message.jpeg
+
+### 🌙 Home Page (Dark Mode)
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/welcome%20page%20with%20user%20name.jpeg
+
+### 📝 Registration Page
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/Registration%20page.jpeg
+
+### 👋 Dashboard - Welcome
+<img src="screenshots/welcome page with user name.jpeg" width="100%"/>
+
+### 🩺 Symptom Selection
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/symptom%20input.jpeg
+
+### 🔍 Disease Prediction
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/disease%20prediction.jpeg
+
+### 💬 AI Chatbot
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/AI%20chatbot%20for%20symptoms%20input.jpeg
+
+### 📊 Data Visualizations
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/data%20analysis%20and%20visulization.jpeg
+
+### 🖥️ Terminal Output
+https://github.com/AnushaPitti/AI-Health-Symptom-Checker/blob/main/screenshots/cmd%20output.png
+``
 ---
 
 ## 👩‍💻 Author
