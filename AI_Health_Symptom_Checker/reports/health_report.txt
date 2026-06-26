@@ -1,0 +1,4 @@
+Sample Health Report
+====================
+This file will be auto-generated after each prediction.
+Run the app, log in, and submit symptoms on the dashboard to create a real report.

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mb-4">Hello, {{ username }} 👋</h2>
+<p>Please select the symptoms you're experiencing, or use the 🎤 voice input button.</p>
+
+<form action="{{ url_for('predict') }}" method="POST" class="form-card">
+    <div class="row">
+        {% for s in symptoms %}
+        <div class="col-md-4 mb-2">
+            <div class="form-check">
+                <input class="form-check-input symptom-check" type="checkbox"
+                       name="symptoms" value="{{ s }}" id="{{ s }}">
+                <label class="form-check-label" for="{{ s }}">
+                    {{ s.replace('_', ' ') }}
+                </label>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="d-flex gap-2 mt-3">
+        <button type="button" id="voiceBtn" class="btn btn-outline-secondary">🎤 Voice Input</button>
+        <button type="submit" class="btn btn-primary">🔍 Analyze Symptoms</button>
+    </div>
+    <p id="voiceStatus" class="mt-2 text-muted"></p>
+</form>
+
+<hr>
+<h3 class="mt-5">📊 Dataset Insights</h3>
+<div class="row">
+    <div class="col-md-6"><img src="{{ url_for('static', filename='charts/symptom_frequency.png') }}" class="img-fluid chart-img"></div>
+    <div class="col-md-6"><img src="{{ url_for('static', filename='charts/disease_distribution.png') }}" class="img-fluid chart-img"></div>
+    <div class="col-md-12 mt-3"><img src="{{ url_for('static', filename='charts/symptom_correlation.png') }}" class="img-fluid chart-img"></div>
+</div>
+{% endblock %}

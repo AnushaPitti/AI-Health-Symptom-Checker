@@ -1,0 +1,31 @@
+Fever,Cough,Headache,Fatigue,SoreThroat,RunnyNose,BodyAche,Nausea,Shortness_of_Breath,Chest_Pain,Disease
+1,1,1,1,1,1,1,0,0,0,Flu
+1,1,1,1,0,0,1,0,0,0,Flu
+0,1,0,1,1,1,0,0,0,0,Common Cold
+0,1,1,0,1,1,0,0,0,0,Common Cold
+0,0,1,1,0,0,0,1,0,0,Migraine
+0,0,1,0,0,0,0,1,0,0,Migraine
+1,1,1,1,1,0,1,0,1,0,COVID-19
+1,1,0,1,1,0,1,0,1,0,COVID-19
+1,1,1,1,0,0,0,0,1,0,COVID-19
+0,1,0,0,1,1,0,0,0,0,Allergy
+0,1,0,0,0,1,0,0,0,0,Allergy
+0,0,1,1,0,0,1,1,0,0,Food Poisoning
+1,0,1,1,0,0,1,1,0,0,Food Poisoning
+1,1,1,1,0,0,1,0,1,1,Pneumonia
+1,1,0,1,0,0,1,0,1,1,Pneumonia
+0,1,0,1,0,0,0,0,1,1,Asthma
+0,1,0,0,0,0,0,0,1,1,Asthma
+1,1,1,1,1,1,1,1,0,0,Flu
+0,1,1,0,1,1,0,0,0,0,Common Cold
+0,0,1,1,0,0,0,1,0,0,Migraine
+1,1,1,1,1,0,1,0,1,0,COVID-19
+0,1,0,0,1,1,0,0,0,0,Allergy
+0,0,1,1,0,0,1,1,0,0,Food Poisoning
+1,1,1,1,0,0,1,0,1,1,Pneumonia
+0,1,0,1,0,0,0,0,1,1,Asthma
+1,1,0,1,1,0,1,0,0,0,Flu
+0,1,1,0,1,1,0,0,0,0,Common Cold
+0,0,1,1,0,0,0,1,0,0,Migraine
+1,1,1,1,0,0,1,0,1,0,COVID-19
+0,1,0,0,1,1,0,0,0,0,Allergy

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>💬 AI Health Chatbot</h2>
+<div class="form-card">
+    <div id="chatBox" class="chat-box"></div>
+    <div class="input-group mt-3">
+        <input id="userMsg" class="form-control" placeholder="Type your message...">
+        <button id="sendBtn" class="btn btn-primary">Send</button>
+    </div>
+</div>
+
+<script>
+const chatBox = document.getElementById("chatBox");
+function appendMsg(sender, text, cls) {
+    chatBox.innerHTML += `<div class="chat-msg ${cls}"><strong>${sender}:</strong> ${text}</div>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+appendMsg("Bot", "Hello! I'm your AI Health Assistant. How can I help you?", "bot-msg");
+
+document.getElementById("sendBtn").onclick = async () => {
+    const input = document.getElementById("userMsg");
+    const msg = input.value.trim();
+    if (!msg) return;
+    appendMsg("You", msg, "user-msg");
+    input.value = "";
+    const res = await fetch("{{ url_for('chatbot') }}", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: msg})
+    });
+    const data = await res.json();
+    appendMsg("Bot", data.reply, "bot-msg");
+};
+</script>
+{% endblock %}

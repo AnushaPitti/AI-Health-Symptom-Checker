@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center hero-section p-5 rounded">
+    <h1 class="display-4 fw-bold">AI Health Symptom Checker</h1>
+    <p class="lead">An intelligent assistant that analyzes your symptoms and provides AI-driven health insights.</p>
+    <hr>
+    <p>
+        Powered by Python, Machine Learning, and Generative AI — built to help
+        you understand your health better and faster.
+    </p>
+    {% if not session.username %}
+        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg me-2">Get Started</a>
+        <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-lg">Login</a>
+    {% else %}
+        <a href="{{ url_for('dashboard') }}" class="btn btn-primary btn-lg">Go to Dashboard</a>
+    {% endif %}
+</div>
+
+<div class="row mt-5 text-center">
+    <div class="col-md-4"><div class="feature-card"><h3>🤖 AI Powered</h3><p>Predicts diseases using Machine Learning.</p></div></div>
+    <div class="col-md-4"><div class="feature-card"><h3>📊 Visual Reports</h3><p>Charts and graphs for deep insights.</p></div></div>
+    <div class="col-md-4"><div class="feature-card"><h3>📝 PDF Reports</h3><p>Downloadable professional health reports.</p></div></div>
+</div>
+{% endblock %}
